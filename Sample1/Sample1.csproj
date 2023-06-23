@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="iconfont.ttf" />
+    <None Remove="Images\人物头像.png" />
+    <None Remove="Images\文件内容显示.png" />
+    <None Remove="Images\百度网盘图标.png" />
+    <None Remove="Images\空间大小占比.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\人物头像.png" />
+    <Resource Include="Images\文件内容显示.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="iconfont.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\百度网盘图标.png" />
+    <Resource Include="Images\空间大小占比.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,211 @@
+﻿<Window x:Class="Sample1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sample1"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowStyle="None" AllowsTransparency="True"  WindowStartupLocation="Manual"  Height="855" Width="1380" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#edeeef">
+            <TextBlock Text="百度网盘 ⋅ Swbna" Foreground="#818999" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="—"  FontSize="20" VerticalAlignment="Center"/>
+                <TextBlock Text="☐"  FontSize="20" VerticalAlignment="Center" Margin="20,0,20,0"/>
+                <TextBlock Text="✕"  FontSize="20" VerticalAlignment="Center" Margin="0,0,20,0"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Image Source="/Images/百度网盘图标.png" VerticalAlignment="Center" Margin="50,0,10,0"/>
+                <TextBlock Text="百度网盘" Foreground="#020202" VerticalAlignment="Center" FontSize="30" FontWeight="Bold"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="&#xe6b5;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center"/>
+                <TextBlock Text="&#xe62b;" Margin="20,0,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center"/>
+                <Border BorderBrush="White" BorderThickness="1" CornerRadius="10" Margin="20,20,0,20"  Background="#fff1ee" Padding="5">
+                    <TextBlock Text="年中大促！首充0.4元/天"  VerticalAlignment="Center" FontSize="20" Foreground="#ff5a5b"/>
+                </Border>
+                <Border BorderBrush="White" BorderThickness="1" CornerRadius="10" Margin="20,20,0,20"  Background="#ffd5a4"  Padding="5">
+                    <TextBlock Text="开通超级会员" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  Foreground="#6b2d00"/>
+                </Border>
+                <Border BorderBrush="White" BorderThickness="1" CornerRadius="10" Margin="20,20,0,20"  Background="#f1f3f8"  Padding="5">
+                    <TextBlock Text="创建企业/团队" VerticalAlignment="Center" FontSize="20" FontWeight="Bold"  Foreground="#495366"/>
+                </Border>
+                <Image Source="/Images/人物头像.png" Margin="10,0,0,0"  VerticalAlignment="Center"/>
+                <TextBlock Text="&#xe8b7;" Margin="20,0,30,0" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="90"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Border  BorderBrush="DarkGray" BorderThickness="1" Opacity="0.6">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" VerticalAlignment="Top">
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe62e;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="首页" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe63f;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="传输" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe676;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="同步" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe61c;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="消息" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+                            <Border Opacity="0.3" BorderBrush="DarkGray" BorderThickness="1"/>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe607;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="APP下载" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe60b;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="一刻相册" Margin="0,10,0,0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                            <Border>
+                                <StackPanel>
+                                    <TextBlock Text="&#xe6c4;" Margin="0,20,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <TextBlock Text="工具" Margin="0,10,0,40" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Column="1" BorderBrush="DarkGray" BorderThickness="1" Opacity="0.6">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="504"/>
+                            <RowDefinition Height="88"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xeb9c;" Margin="10,0,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                <TextBlock Text="我的文件" Margin="5,0,0,0" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                <TextBlock Text="┋" VerticalAlignment="Center" Margin="70,0,0,0" HorizontalAlignment="Right"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe62f;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="最近"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe67f;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="图片"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe656;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="视频"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe620;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="文档"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xea09;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="音乐"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe606;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="种子"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe64b;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="其它"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xe8b7;" Margin="40,10,10,10" FontFamily="/iconfont.ttf#iconfont" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <TextBlock Text="隐藏空间"  VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1">
+                            <Border BorderBrush="DarkGray" BorderThickness="1" Opacity="0.3"/>
+                            <TextBlock Text="我的分享" Margin="40,10,0,0" FontWeight="Bold"  VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15"/>
+                            <TextBlock Text="回收站" Margin="40,10,0,0" FontWeight="Bold"  VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2">
+                            <Border BorderBrush="DarkGray" BorderThickness="1" Opacity="0.3"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="&#xeb9c;" Margin="10,0,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                <TextBlock Text="快捷访问" Margin="5,0,0,0" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                            </StackPanel>
+                            <Border BorderThickness="1" Opacity="0.5" Margin="10,10,10,0" CornerRadius="2">
+                                <Border.BorderBrush>
+                                    <VisualBrush>
+                                        <VisualBrush.Visual>
+                                            <Rectangle StrokeDashArray="4 2" Stroke="Gray" StrokeThickness="1" Width="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualWidth}" Height="{Binding RelativeSource={RelativeSource AncestorType={x:Type Border}}, Path=ActualHeight}"/>
+                                        </VisualBrush.Visual>
+                                    </VisualBrush>
+                                </Border.BorderBrush>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="&#xeaf3;" Margin="10,0,0,0" FontFamily="/iconfont.ttf#iconfont" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="拖入常用文件夹" Margin="5,0,0,0" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                </StackPanel>
+                            </Border>
+                            <StackPanel VerticalAlignment="Bottom" Margin="0,40,0,20" HorizontalAlignment="Center">
+                                <Image Source="/Images/空间大小占比.png"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="162G/3072G" Foreground="DarkGray"/>
+                                    <TextBlock Text="扩容" Margin="95,0,0,0" FontWeight="Bold" Foreground="#11acff" HorizontalAlignment="Right"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <Image Grid.Column="2" Source="/Images/文件内容显示.png"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
