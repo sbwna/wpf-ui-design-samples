@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="iconfont.ttf" />
+    <None Remove="Images\BaiduYunDisk.png" />
+    <None Remove="Images\BiliBili.png" />
+    <None Remove="Images\BreeZip.png" />
+    <None Remove="Images\MicrosoftStoreIcon.png" />
+    <None Remove="Images\qq.png" />
+    <None Remove="Images\Search.png" />
+    <None Remove="Images\Wechat.png" />
+    <None Remove="Images\WPSOffice.png" />
+    <None Remove="Images\滚动页面.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="iconfont.ttf" />
+    <Resource Include="Images\BaiduYunDisk.png" />
+    <Resource Include="Images\BiliBili.png" />
+    <Resource Include="Images\BreeZip.png" />
+    <Resource Include="Images\MicrosoftStoreIcon.png" />
+    <Resource Include="Images\qq.png" />
+    <Resource Include="Images\Search.png" />
+    <Resource Include="Images\Wechat.png" />
+    <Resource Include="Images\WPSOffice.png" />
+    <Resource Include="Images\滚动页面.png" />
+  </ItemGroup>
+
+</Project>

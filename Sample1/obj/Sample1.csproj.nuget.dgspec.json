@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Biao\\code\\UIDesignSamples\\Sample1\\Sample1.csproj": {}
+    "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\Sample1.csproj": {}
   },
   "projects": {
-    "D:\\Biao\\code\\UIDesignSamples\\Sample1\\Sample1.csproj": {
+    "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\Sample1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Biao\\code\\UIDesignSamples\\Sample1\\Sample1.csproj",
+        "projectUniqueName": "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\Sample1.csproj",
         "projectName": "Sample1",
-        "projectPath": "D:\\Biao\\code\\UIDesignSamples\\Sample1\\Sample1.csproj",
+        "projectPath": "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\Sample1.csproj",
         "packagesPath": "C:\\Users\\zxcv1\\.nuget\\packages\\",
-        "outputPath": "D:\\Biao\\code\\UIDesignSamples\\Sample1\\obj\\",
+        "outputPath": "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

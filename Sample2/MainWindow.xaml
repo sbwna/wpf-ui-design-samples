@@ -1,0 +1,220 @@
+﻿<Window x:Class="Sample2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sample2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1030" Width="1270" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#e9f7f9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Images/MicrosoftStoreIcon.png" Width="40" Height="40" Margin="20,0,0,0"/>
+                <TextBlock Text="Microsoft Store" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="20" FontWeight="Light"/>
+            </StackPanel>
+
+            <Border Grid.Column="1" BorderBrush="#eaf7f9" BorderThickness="4" Background="#f7fdfd" CornerRadius="10"  Margin="0,10,0,10">
+                <Grid>
+                    <TextBox Text="搜索应用、游戏、电影、设备等" VerticalContentAlignment="Center" Margin="3,0,0,0" BorderThickness="0" Background="Transparent">
+                        <!--设置提示文字-->
+                    </TextBox>
+                    <Image  Source="/Images/Search.png" Width="20" Height="20" Margin="380,0,0,0"/>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Column="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="&#xe62d;" FontFamily="/iconfont.ttf#iconfont" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="40,0,0,0"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Column="1" Margin="0,10,0,0">
+                    <TextBlock Text="&#xe60e;" FontFamily="/iconfont.ttf#iconfont" FontSize="20"   VerticalAlignment="Top"/>
+                    <TextBlock Text="&#xe65b;" FontFamily="/iconfont.ttf#iconfont" FontSize="20" Margin="40,0,0,0"  VerticalAlignment="Top"/>
+                    <TextBlock Text="&#xeca0;" FontFamily="/iconfont.ttf#iconfont" FontSize="20" Margin="40,0,20,0"  VerticalAlignment="Top"/>
+                </StackPanel>
+            </Grid>
+
+
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Border BorderThickness="1" BorderBrush="#d8eaea" Opacity="0.4" Background="#e7f8f9">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="&#xe619;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="主页" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="12" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="&#xe60a;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="应用" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="12" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="&#xe69d;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="游戏" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="12" FontWeight="Light"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" VerticalAlignment="Bottom" Margin="0,0,0,20">
+                        <StackPanel>
+                            <TextBlock Text="&#xe636;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="库" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="12" FontWeight="Light"/>
+                        </StackPanel>
+                        <StackPanel >
+                            <TextBlock Text="&#xe62c;" FontFamily="/iconfont.ttf#iconfont" FontSize="30" Margin="0,20,0,0" HorizontalAlignment="Center"/>
+                            <TextBlock Text="帮助" HorizontalAlignment="Center" Margin="0,5,0,0" FontSize="12" FontWeight="Light"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Column="1" Background="#eef9f9">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Image Source="/Images/滚动页面.png" Margin="0,20,0,0" Grid.Row="0"/>
+                
+                <StackPanel Grid.Row="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="热门免费应用" FontSize="30" Margin="10,10,0,0"/>
+                        <TextBlock Text="&#xe618;" FontFamily="/iconfont.ttf#iconfont" Foreground="#2949b1" Margin="10,0,0,0" FontSize="30" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <UniformGrid Columns="3" Rows="3" Margin="0,40,0,0">
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/Wechat.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="微信" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="160,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.6分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/WPSOffice.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="WPS Office 个人版" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="60,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="2.8分 | 高效工作" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/BaiduYunDisk.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="百度网盘" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="130,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="1.6分 | 实用程序与工具" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/BiliBili.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="哔哩哔哩" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="130,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.4分 | 娱乐" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/qq.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="QQ桌面版" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="130,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="2.0分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/BreeZip.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="BreeZip:Rar和Zip解压缩" FontSize="15" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.6分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/Wechat.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="微信" FontSize="20" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="150,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.6分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/Wechat.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="微信" FontSize="20" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="150,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.6分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border Background="#ffffff" CornerRadius="10" BorderThickness="10">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="/Images/Wechat.png" Margin="20,10,0,10"/>
+                                <StackPanel>
+                                    <StackPanel Margin="20,10,0,0" Orientation="Horizontal">
+                                        <TextBlock Text="微信" FontSize="20" FontWeight="Bold"/>
+                                        <TextBlock Text="免费下载" Background="#f5f8f8" FontWeight="Light" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="150,0,0,0"/>
+                                    </StackPanel>
+                                    <TextBlock Text="3.6分 | 社交" Foreground="#8d8d8d" Margin="20,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Border>
+                    </UniformGrid>
+                </StackPanel>
+                
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>

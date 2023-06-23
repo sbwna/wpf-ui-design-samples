@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yIWRw/pK/u5Q2E0HM2klvqJ0wsy+x6QM3jIkJvWCgaHeum8uAd4BOk6RtAt9ukDK1FRT4f2tSH5oLyRoSJ9o3A==",
+  "dgSpecHash": "zsq6MhioppwfplEjHYB2GDd87WolDpxtSF3qVWgyZvfNDjxYd6VepsQiq6uIDjDAE/weqLJvVjfAncwHBzvirA==",
   "success": true,
-  "projectFilePath": "D:\\Biao\\code\\UIDesignSamples\\Sample1\\Sample1.csproj",
+  "projectFilePath": "D:\\Biao\\code\\WPF_UIDesignSamples\\Sample1\\Sample1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
