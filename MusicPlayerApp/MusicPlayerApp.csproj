@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add_playlist.png" />
+    <None Remove="Images\album.png" />
+    <None Remove="Images\artists.png" />
+    <None Remove="Images\bg.png" />
+    <None Remove="Images\Bitmap.png" />
+    <None Remove="Images\button_pause.png" />
+    <None Remove="Images\duration.png" />
+    <None Remove="Images\explore.png" />
+    <None Remove="Images\favorites.png" />
+    <None Remove="Images\favorite_songs.png" />
+    <None Remove="Images\genres.png" />
+    <None Remove="Images\heads.png" />
+    <None Remove="Images\hear_this.png" />
+    <None Remove="Images\icons__icon_back.png" />
+    <None Remove="Images\icons__icon_next.png" />
+    <None Remove="Images\icons__icon_replay.png" />
+    <None Remove="Images\icons__icon_shuffle.png" />
+    <None Remove="Images\icons__icon_volume.png" />
+    <None Remove="Images\last_added.png" />
+    <None Remove="Images\like_mini.png" />
+    <None Remove="Images\like_mini2.png" />
+    <None Remove="Images\logo.png" />
+    <None Remove="Images\main_bg.png" />
+    <None Remove="Images\oval.png" />
+    <None Remove="Images\playlist.png" />
+    <None Remove="Images\play_mini.png" />
+    <None Remove="Images\play_mini2.png" />
+    <None Remove="Images\radio.png" />
+    <None Remove="Images\search.png" />
+    <None Remove="Images\share.png" />
+    <None Remove="Images\songs.png" />
+    <None Remove="Images\user_avatar.png" />
+    <None Remove="Images\volume_line.png" />
+    <None Remove="Images\woman.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\add_playlist.png" />
+    <Resource Include="Images\album.png" />
+    <Resource Include="Images\artists.png" />
+    <Resource Include="Images\bg.png" />
+    <Resource Include="Images\Bitmap.png" />
+    <Resource Include="Images\button_pause.png" />
+    <Resource Include="Images\duration.png" />
+    <Resource Include="Images\explore.png" />
+    <Resource Include="Images\favorites.png" />
+    <Resource Include="Images\favorite_songs.png" />
+    <Resource Include="Images\genres.png" />
+    <Resource Include="Images\heads.png" />
+    <Resource Include="Images\hear_this.png" />
+    <Resource Include="Images\icons__icon_back.png" />
+    <Resource Include="Images\icons__icon_next.png" />
+    <Resource Include="Images\icons__icon_replay.png" />
+    <Resource Include="Images\icons__icon_shuffle.png" />
+    <Resource Include="Images\icons__icon_volume.png" />
+    <Resource Include="Images\last_added.png" />
+    <Resource Include="Images\like_mini.png" />
+    <Resource Include="Images\like_mini2.png" />
+    <Resource Include="Images\logo.png" />
+    <Resource Include="Images\main_bg.png" />
+    <Resource Include="Images\oval.png" />
+    <Resource Include="Images\playlist.png" />
+    <Resource Include="Images\play_mini.png" />
+    <Resource Include="Images\play_mini2.png" />
+    <Resource Include="Images\radio.png" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\share.png" />
+    <Resource Include="Images\songs.png" />
+    <Resource Include="Images\user_avatar.png" />
+    <Resource Include="Images\volume_line.png" />
+    <Resource Include="Images\woman.png" />
+  </ItemGroup>
+
+</Project>
